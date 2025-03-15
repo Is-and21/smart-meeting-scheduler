@@ -2,10 +2,10 @@
 from datetime import datetime, timedelta
 
 class SmartMeetingScheduler:
-    def _init_(self):  # Fix constructor name
+    def _init_(self):  
         self.working_hours = (9, 17)  # 9 AM to 5 PM
         self.holidays = {"2025-01-01", "2025-12-25"}  # Example public holidays
-        self.schedules = {}  # Stores meetings as {user: {date: [(start, end)]}}
+        self.schedules = {} 
 
     def is_working_day(self, date):
         weekday = date.weekday()
